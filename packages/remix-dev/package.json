@@ -20,6 +20,7 @@
     "@babel/plugin-syntax-jsx": "7.16.7",
     "@babel/preset-typescript": "7.16.7",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@mdx-js/mdx": "^2.1.1",
     "@npmcli/package-json": "^2.0.0",
     "@remix-run/server-runtime": "1.4.3",
     "cacache": "^15.0.5",
@@ -53,8 +54,7 @@
     "strip-bom": "^4.0.0",
     "tar-fs": "^2.1.1",
     "tsconfig-paths": "^3.14.0",
-    "ws": "^7.4.5",
-    "xdm": "^2.0.0"
+    "ws": "^7.4.5"
   },
   "devDependencies": {
     "@types/cacache": "^15.0.0",

@@ -11,8 +11,8 @@ export function mdxPlugin(config: RemixConfig): esbuild.Plugin {
   return {
     name: "remix-mdx",
     async setup(build) {
-      let [xdm, { default: remarkFrontmatter }] = await Promise.all([
-        import("xdm"),
+      let [mdx, { default: remarkFrontmatter }] = await Promise.all([
+        import('@mdx-js/mdx'),
         import("remark-frontmatter") as any,
       ]);
 
@@ -74,7 +74,7 @@ export const meta = typeof attributes !== "undefined" && attributes.meta;
 export const links = undefined;
           `;
 
-          let compiled = await xdm.compile(fileContents, {
+          let compiled = await mdx.compile(fileContents, {
             jsx: true,
             jsxRuntime: "classic",
             pragma: "React.createElement",
